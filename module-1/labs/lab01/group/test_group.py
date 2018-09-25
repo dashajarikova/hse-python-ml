@@ -9,10 +9,7 @@ from itertools import permutations
 import string
 
 try:
-    sol = __import__("sol_group")
-    Person = getattr(sol, "Person")
-    Student = getattr(sol, "Student")
-    Group = getattr(sol, "Group")
+    from sol_group import Person, Student, Group
 except (ModuleNotFoundError, ImportError):
     from group import Person, Student, Group
 
@@ -299,7 +296,7 @@ class TestGroup(unittest.TestCase):
         self.assertEqual(g, g)
 
         a = Group(self._get_group() + self._get_group())
-        self.assertNotEqual(a, g)
+        self.assertEqual(a, g)  # were assertNotEqual -- bad test
         a = deepcopy(g)
         a.sort_by_skill()
         self.assertEqual(g, a)
