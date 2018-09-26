@@ -150,5 +150,6 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-# Files with solutions
+# Files with solutions and private tests
 *sol_*
+*private_*
