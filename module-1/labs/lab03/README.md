@@ -1,9 +1,8 @@
-### Lab 03 (14 points in total)
+### Lab 03 (13 points in total)
 
-**Deadline:** ??
+**Deadline:** 06 Oct 2018 23:59:59
 
-- five-exercises (2 points)
+- five-exercises (4 points)
 - min-max (3 points)
 - range (3 points)
-- password (3 points)
 - chain (3 points)
